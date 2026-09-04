@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primul meu site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <nav>
+    <a href="#acasa">Acasă</a>
+    <a href="#servicii">Servicii</a>
+    <a href="#despre">Despre noi</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <section class="hero" id="acasa">
+        <img 
+    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+    alt="Mașină sport"
+    class="hero-image">
+
+    <p class="subtitle">DETAILING AUTO PREMIUM</p>
+
+    <h1>Redăm mașinii tale strălucirea de showroom.</h1>
+
+    <p>
+        Oferim servicii profesionale de detailing interior,
+        polish exterior și protecție ceramică.
+    </p>
+
+    <button onclick="salut()">Solicită o ofertă</button>
+
+</section>
+<section class="services" id="servicii">
+
+    <h2>Serviciile noastre</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <h3>🚗 Detailing interior</h3>
+            <p>Curățare profesională și igienizare completă a interiorului.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>✨ Polish exterior</h3>
+            <p>Redăm caroseriei strălucirea și aspectul de showroom.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🛡️ Protecție ceramică</h3>
+            <p>Protecție premium pentru vopsea și un aspect impecabil.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="about" id="despre">
+
+    <h2>Despre noi</h2>
+
+    <p>
+        Suntem pasionați de automobile și oferim servicii
+        de detailing la standarde premium.
+    </p>
+
+</section>
+<section class="contact" id="contact">
+
+    <h2>Contactează-ne</h2>
+
+    <p>Solicită o ofertă și te vom contacta cât mai curând.</p>
+
+    <form onsubmit="trimiteFormular(event)">
+
+    <input 
+        type="text" 
+        placeholder="Numele tău"
+        required>
+
+    <input 
+        type="email" 
+        placeholder="Emailul tău"
+        required>
+
+    <textarea 
+        placeholder="Cu ce te putem ajuta?"
+        required></textarea>
+
+    <button type="submit">Trimite mesajul</button>
+
+</form>
+
+</section>
+    <h2>Serviciile mele</h2>
+
+<p>Realizez site-uri moderne pentru persoane și afaceri.</p>
+    <script>
+    function salut() {
+        alert("Mulțumesc că m-ai contactat!");
+    }
+
+    function trimiteFormular(event) {
+        event.preventDefault();
+
+        alert("Mulțumim! Mesajul tău a fost trimis.");
+
+        event.target.reset();
+    }
+</script>
+
+</body>
+</html>
