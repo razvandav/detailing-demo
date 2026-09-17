@@ -1,115 +1,500 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primul meu site</title>
+
+   <title>Elite Detailing | Detailing Auto Premium</title>
+
+<meta name="description"
+      content="Elite Detailing oferă servicii premium de detailing auto, polish exterior, detailing interior și protecție ceramică.">
+
+<meta name="keywords"
+      content="detailing auto, detailing București, polish auto, protecție ceramică, curățare auto">
+
+<meta name="author" content="Elite Detailing">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/744/744465.png">
 </head>
 
 <body>
-   <nav>
-    <a href="#acasa">Acasă</a>
-    <a href="#servicii">Servicii</a>
-    <a href="#despre">Despre noi</a>
-    <a href="#contact">Contact</a>
-</nav>
 
-    <section class="hero" id="acasa">
-        <img 
-    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
-    alt="Mașină sport"
-    class="hero-image">
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
 
-    <p class="subtitle">DETAILING AUTO PREMIUM</p>
+            <a href="#acasa" class="logo">
+                ELITE<span>DETAILING</span>
+            </a>
 
-    <h1>Redăm mașinii tale strălucirea de showroom.</h1>
+            <div class="nav-links">
+                <a href="#acasa">Acasă</a>
+                <a href="#servicii">Servicii</a>
+                <a href="#preturi">Prețuri</a>
+                <a href="#despre">Despre noi</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
 
-    <p>
-        Oferim servicii profesionale de detailing interior,
-        polish exterior și protecție ceramică.
-    </p>
+            <a href="#contact" class="nav-button">
+                Solicită ofertă
+            </a>
 
-    <button onclick="salut()">Solicită o ofertă</button>
+        </nav>
+    </header>
 
-</section>
-<section class="services" id="servicii">
 
-    <h2>Serviciile noastre</h2>
+    <main>
 
-    <div class="service-container">
+        <!-- HERO -->
+        <section class="hero" id="acasa">
 
-        <div class="service-card">
-            <h3>🚗 Detailing interior</h3>
-            <p>Curățare profesională și igienizare completă a interiorului.</p>
-        </div>
+            <div class="hero-content">
 
-        <div class="service-card">
-            <h3>✨ Polish exterior</h3>
-            <p>Redăm caroseriei strălucirea și aspectul de showroom.</p>
-        </div>
+                <p class="eyebrow">DETAILING AUTO PREMIUM</p>
 
-        <div class="service-card">
-            <h3>🛡️ Protecție ceramică</h3>
-            <p>Protecție premium pentru vopsea și un aspect impecabil.</p>
-        </div>
+                <h1>
+                    Mașina ta.<br>
+                    <span>La nivel de showroom.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Redăm strălucirea și aspectul impecabil al mașinii tale
+                    prin servicii profesionale de detailing.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="primary-button">
+                        Solicită o ofertă →
+                    </a>
+
+                    <a href="#servicii" class="secondary-button">
+                        Vezi serviciile
+                    </a>
+
+                    <a href="https://wa.me/40700000000" class="whatsapp-button" target="_blank">
+    WhatsApp →
+</a>
+                </div>
+
+            </div>
+
+            <div class="hero-image-container">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                    alt="Mașină premium cu protecție ceramică"
+                    class="hero-image">
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES -->
+        <section class="services section" id="servicii">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">CE OFERIM</p>
+
+                <h2>
+                    Servicii construite pentru<br>
+                    <span>perfecțiune.</span>
+                </h2>
+
+                <p>
+                    Fiecare detaliu contează. Folosim produse profesionale
+                    și acordăm atenție fiecărei suprafețe.
+                </p>
+
+            </div>
+
+
+            <div class="service-container">
+
+                <article class="service-card">
+
+                    <div class="service-icon">01</div>
+
+                    <h3>Detailing interior</h3>
+
+                    <p>
+                        Curățare profundă, igienizare și îngrijire
+                        profesională pentru fiecare element al interiorului.
+                    </p>
+
+                    <a href="#contact">Află mai multe →</a>
+
+                </article>
+
+
+                <article class="service-card featured">
+
+                    <div class="service-icon">02</div>
+
+                    <h3>Polish exterior</h3>
+
+                    <p>
+                        Eliminăm imperfecțiunile și redăm vopselei
+                        profunzimea și strălucirea de showroom.
+                    </p>
+
+                    <a href="#contact">Află mai multe →</a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">03</div>
+
+                    <h3>Protecție ceramică</h3>
+
+                    <p>
+                        Protecție premium împotriva contaminanților,
+                        razelor UV și factorilor externi.
+                    </p>
+
+                    <a href="#contact">Află mai multe →</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+<!-- PRICING -->
+<section class="pricing section" id="preturi">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">PACHETE</p>
+
+        <h2>
+            Alege nivelul de <span>îngrijire.</span>
+        </h2>
+
+        <p>
+            Pachete create pentru diferite nevoi și bugete.
+        </p>
+
+    </div>
+
+
+    <div class="pricing-container">
+
+        <article class="pricing-card">
+
+            <p class="pricing-name">START</p>
+
+            <h3>299 <span>lei</span></h3>
+
+            <p class="pricing-description">
+                Îngrijirea esențială pentru mașina ta.
+            </p>
+
+            <ul>
+                <li>✓ Spălare exterior</li>
+                <li>✓ Curățare interior</li>
+                <li>✓ Aspirare profesională</li>
+                <li>✓ Curățare geamuri</li>
+            </ul>
+
+            <a href="#contact" class="pricing-button">
+                Alege pachetul →
+            </a>
+
+        </article>
+
+
+        <article class="pricing-card pricing-popular">
+
+            <div class="popular-badge">
+                CEL MAI ALES
+            </div>
+
+            <p class="pricing-name">PREMIUM</p>
+
+            <h3>599 <span>lei</span></h3>
+
+            <p class="pricing-description">
+                Detailing complet pentru un rezultat premium.
+            </p>
+
+            <ul>
+                <li>✓ Detailing interior</li>
+                <li>✓ Polish exterior</li>
+                <li>✓ Decontaminare vopsea</li>
+                <li>✓ Protecție vopsea</li>
+                <li>✓ Tratament plastic</li>
+            </ul>
+
+            <a href="#contact" class="pricing-button">
+                Alege pachetul →
+            </a>
+
+        </article>
+
+
+        <article class="pricing-card">
+
+            <p class="pricing-name">ULTIMATE</p>
+
+            <h3>999 <span>lei</span></h3>
+
+            <p class="pricing-description">
+                Experiența completă de showroom.
+            </p>
+
+            <ul>
+                <li>✓ Detailing interior complet</li>
+                <li>✓ Polish în mai multe etape</li>
+                <li>✓ Protecție ceramică</li>
+                <li>✓ Tratament piele</li>
+                <li>✓ Protecție jante</li>
+            </ul>
+
+            <a href="#contact" class="pricing-button">
+                Alege pachetul →
+            </a>
+
+        </article>
 
     </div>
 
 </section>
-<section class="about" id="despre">
+        <!-- ABOUT -->
+        <section class="about section" id="despre">
 
-    <h2>Despre noi</h2>
+            <div class="about-image">
 
-    <p>
-        Suntem pasionați de automobile și oferim servicii
-        de detailing la standarde premium.
-    </p>
+                <img
+                    src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
+                   alt="Mașină după detailing auto premium"
 
-</section>
-<section class="contact" id="contact">
+            </div>
 
-    <h2>Contactează-ne</h2>
+            <div class="about-content">
 
-    <p>Solicită o ofertă și te vom contacta cât mai curând.</p>
+                <p class="eyebrow">DESPRE NOI</p>
 
-    <form onsubmit="trimiteFormular(event)">
+                <h2>
+                    Nu facem doar detailing.
+                    <span>Restaurăm aspectul mașinii.</span>
+                </h2>
 
-    <input 
-        type="text" 
-        placeholder="Numele tău"
-        required>
+                <p>
+                    Suntem pasionați de automobile și credem că un detailing
+                    bun înseamnă mai mult decât o simplă curățare.
+                </p>
 
-    <input 
-        type="email" 
-        placeholder="Emailul tău"
-        required>
+                <p>
+                    Folosim tehnici profesionale, produse premium și
+                    acordăm atenție fiecărui detaliu.
+                </p>
 
-    <textarea 
-        placeholder="Cu ce te putem ajuta?"
-        required></textarea>
+                <div class="stats">
 
-    <button type="submit">Trimite mesajul</button>
+                    <div>
+                        <strong>500+</strong>
+                        <span>Mașini tratate</span>
+                    </div>
 
-</form>
+                    <div>
+                        <strong>5★</strong>
+                        <span>Experiența clienților</span>
+                    </div>
 
-</section>
-    <h2>Serviciile mele</h2>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Atenție la detalii</span>
+                    </div>
 
-<p>Realizez site-uri moderne pentru persoane și afaceri.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+        <section class="gallery section" id="galerie">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">PORTOFOLIU</p>
+
+                <h2>
+                    Rezultatele <span>vorbesc.</span>
+                </h2>
+
+            </div>
+
+         <div class="gallery-grid">
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd"
+             alt="Detailing auto premium">
+        <div class="gallery-overlay">
+            <span>DETAILING INTERIOR</span>
+            <strong>Rezultat premium</strong>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def"
+             alt="Polish auto premium">
+        <div class="gallery-overlay">
+            <span>POLISH EXTERIOR</span>
+            <strong>Strălucire perfectă</strong>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d"
+             alt="Protecție auto">
+        <div class="gallery-overlay">
+            <span>PROTECȚIE</span>
+            <strong>Aspect de showroom</strong>
+        </div>
+    </div>
+
+</div>
+
+        </section>
+
+
+        <!-- TESTIMONIAL -->
+        <section class="testimonial section">
+
+            <p class="eyebrow">CE SPUN CLIENȚII</p>
+
+            <blockquote>
+                „Mașina arată mai bine decât în ziua în care am cumpărat-o.
+                Diferența este incredibilă.”
+            </blockquote>
+
+            <p class="client-name">— Andrei M.</p>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+
+            <div class="contact-heading">
+
+                <p class="eyebrow">CONTACT</p>
+
+                <h2>
+                    Pregătit să-i redai<br>
+                    <span>strălucirea?</span>
+                </h2>
+
+                <p>
+                    Completează formularul și te vom contacta pentru
+                    o ofertă personalizată.
+                </p>
+
+            </div>
+
+
+            <form action="https://formspree.io/f/xljdevwe"
+      method="POST"
+      onsubmit="trimiteFormular(event)">
+
+                <input
+    type="text"
+    name="nume"
+    placeholder="Numele tău"
+    required>
+
+<input
+    type="email"
+    name="email"
+    placeholder="Emailul tău"
+    required>
+
+<input
+    type="tel"
+    name="telefon"
+    placeholder="Numărul de telefon"
+    required>
+
+<textarea
+    name="mesaj"
+    placeholder="Spune-ne ce serviciu te interesează..."
+    required></textarea>
+
+                <button type="submit">
+                    Trimite solicitarea →
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            ELITE<span>DETAILING</span>
+        </div>
+
+        <p>
+            © 2026 Elite Detailing. Toate drepturile rezervate.
+        </p>
+
+        <div class="footer-links">
+            <a href="#acasa">Acasă</a>
+            <a href="#servicii">Servicii</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </footer>
+
+
     <script>
-    function salut() {
-        alert("Mulțumesc că m-ai contactat!");
+
+        async function trimiteFormular(event) {
+
+    event.preventDefault();
+
+    const form = event.target;
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+            "Accept": "application/json"
+        }
+    });
+
+    if (response.ok) {
+
+        alert("Solicitarea a fost trimisă cu succes!");
+
+        form.reset();
+
+    } else {
+
+        alert("A apărut o eroare. Te rugăm să încerci din nou.");
+
     }
+}
+        function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
 
-    function trimiteFormular(event) {
-        event.preventDefault();
-
-        alert("Mulțumim! Mesajul tău a fost trimis.");
-
-        event.target.reset();
-    }
-</script>
+    </script>
 
 </body>
+
 </html>
